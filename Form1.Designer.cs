@@ -110,7 +110,7 @@
             Controls.Add(textBox2);
             Controls.Add(textBox3);
             Name = "Form1";
-            Text = "Form1";
+            Text = "端口转发";
             ResumeLayout(false);
             PerformLayout();
         }
