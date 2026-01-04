@@ -3,9 +3,9 @@ using System.Net;
 
 namespace PortSend
 {
-    public partial class Form1 : Form
+    public partial class Form_Main : Form
     {
-        public Form1()
+        public Form_Main()
         {
             InitializeComponent();
         }
@@ -14,7 +14,7 @@ namespace PortSend
         {
             try
             {
-                
+                button_Start.Enabled = false;
                 LOCAL_HOST = "0.0.0.0";
                 LOCAL_PORT = Convert.ToInt32(textBox2.Text);
                 REMOTE_HOST = textBox3.Text;
@@ -36,6 +36,7 @@ namespace PortSend
             catch (Exception ex)
             {
                 textBox5.Text += ex.ToString()+"\r\n";
+                button_Start.Enabled = true;
             }
             
         }
